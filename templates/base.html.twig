@@ -1,7 +1,7 @@
 {% form_theme form 'form.html.twig' %}
 
 <!DOCTYPE html>
-<html>
+<html class="min-h-dvh">
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
@@ -15,7 +15,9 @@
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
-    <body>
-        {% block body %}{% endblock %}
+    <body class="min-h-dvh flex justify-center items-center dark:bg-slate-950">
+        <div class="w-[40rem] px-8 py-8 bg-slate-100 rounded-lg shadow-lg border mb-40 dark:bg-slate-800 dark:border-slate-700">
+            {% block body %}{% endblock %}
+        </div>
     </body>
 </html>
