@@ -20,7 +20,7 @@ class Link
     private ?string $destinationUrl = null;
 
     #[ORM\Column(options: ['default' => true])]
-    private ?bool $enabled = null;
+    private ?bool $enabled = true;
 
     public function getId(): ?int
     {
