@@ -15,9 +15,22 @@
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
-    <body class="min-h-dvh flex justify-center items-center dark:bg-slate-950">
-        <div class="w-[40rem] px-8 py-8 bg-slate-100 rounded-lg shadow-lg border mb-40 dark:bg-slate-800 dark:border-slate-700">
-            {% block body %}{% endblock %}
+    <body class="min-h-dvh flex flex-col dark:bg-slate-950">
+        <div class="container mx-auto my-auto p-4">
+            <div class="max-w-[40rem] mx-auto">
+                <div class="px-8 py-8 mb-8 bg-slate-100 rounded-lg shadow-lg border dark:bg-slate-800 dark:border-slate-700">
+                    {% block body %}{% endblock %}
+                </div>
+
+                <div class="text-slate-500">
+                    This website is brought to you by
+                    <a href="https://github.com/d9beuD">d9beuD</a>
+                    for free. It uses no trackers, no ads, and no cookies. It does not
+                    record any personal data. It is open source and you can find the
+                    source code on
+                    <a href="https://github.com/d9beuD/link-shortener">GitHub</a>.
+                </div>
+            </div>
         </div>
     </body>
 </html>
