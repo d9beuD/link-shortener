@@ -14,7 +14,7 @@ class Link
     #[ORM\Column]
     private ?int $id = null;
 
-    #[Assert\Url]
+    #[Assert\Url(requireTld: true)]
     #[Assert\NotBlank]
     #[ORM\Column(length: 500)]
     private ?string $destinationUrl = null;
